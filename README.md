@@ -10,6 +10,6 @@ The NuPassword Manager is a simple CLI password manager that was created on a mo
 - House the user and password files locally.
 
 ## Interface
-![User Authentication](/repo/C1.JPG)
-![Adding Logins & Choosing Encryption Cipher](/repo/C2.JPG)
-![Showing Stored Passwords](/repo/C3.JPG)
+![User Authentication](/repo/C1.jpg)
+![Adding Logins & Choosing Encryption Cipher](/repo/C2.jpg)
+![Showing Stored Passwords](/repo/C3.jpg)
