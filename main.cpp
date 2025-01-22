@@ -4,7 +4,6 @@ using namespace std;
 #include <fstream>
 #include <string>
 #include <cctype>
-#include <vector>
 
 string firstName, lastName, masterPassword, fileName;
 
@@ -46,7 +45,7 @@ string shift_cipher_encryption (string plainString)
     }
 
     const int SIZE = stringSize;
-    std::vector<int> plainArray(SIZE), encryptedArray(SIZE);
+    int plainArray[SIZE], encryptedArray[SIZE];
     string encryptedString;
     int key_k = (firstName[0] + lastName[0]) % 26;
     
@@ -79,7 +78,8 @@ string affine_cipher_encryption(string plainString)
         stringSize = plainString.length();
     }
 
-    std::vector<int> plain_array(stringSize), encrypted_array(stringSize);
+    int plain_array[stringSize];
+    int encrypted_array[stringSize];
     int key_a, key_k;
     string cipherText;
     key_a = (cardinalConverter(firstName[0]) * cardinalConverter(lastName[0])) % 26;
